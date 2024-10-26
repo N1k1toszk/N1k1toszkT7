@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание №6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <header class="text-center">
+        <img class="logo" src="logo.png" alt="Логотип">
+        <h1>Planet`Pizza</h1>
+    </header>
+    <div class="container-fluid">
+        <h2>Купить с доставкой:</h2>
+        <form name="calc">
+            <div class="row">
+                <div class="col-5">Тип пиццы:</div>
+                <div class="col-5">Количество выбранной пиццы:</div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <select name="type">
+                        <option value="1">Пепперони (500гр)</option>
+                        <option value="2">Вегетарианская (350гр)</option>
+                        <option value="3">Мясная (750гр)</option>
+                    </select>
+                </div>
+                <div class="col-2"><input id="count" type="number" value="1"></div>
+                <div class="col-5"></div>
+                <br>
+                <div class="row">
+                    <div id="radios">
+                        <div class="col-12 pl-4">
+                            <label><input type="radio" checked="checked"name="options"value="1" >Тонкие бортики</label>
+                        </div>
+                        <div class="col-12 pl-4">
+                            <label><input type="radio"name="options"value="2">Толстые бортики</label>  
+                        </div>
+                        <div class="col-12 pl-4">
+                            <label><input type="radio" name="options"value="3" >Сырные бортики</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="checkboxes">
+                        <div class="col-12 pl-5">
+                            <label><input type="checkbox"name="1">Добавить сыр</label>
+                        </div>
+                        <div class="col-12 pl-5">
+                            <label><input type="checkbox"name="2">Добавить соус терияки</label>
+                        </div>
+                        <div class="col-12 pl-5">
+                            <label><input type="checkbox"name="3">Убрать помидоры</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    <bottom class="text-center">
+        <div class="row">
+            <div class="col-8 mt-2">
+                <h2>Сумма заказа:</h2>
+                <div class="text-left" id="price"></div>
+            </div>
+        </div>
+    </bottom>
+</div> 
+</body>
+</html>
